@@ -6,14 +6,8 @@
     </div>
   </div>
   <div class="content-wrapper">
-    @if(mediaQueryService.smallDown) {
-    <div class="content">
-      {{ text | shorten: 100 }}
-    </div>
-    } @else {
     <div class="content">
       {{ text }}
     </div>
-    }
   </div>
 </div>

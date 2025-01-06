@@ -1,6 +1,5 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, OnInit, inject } from '@angular/core';
-import { MediaQueryService } from 'src/app/shared/services/mediaquery-service/mediaquery.service';
 import { HeaderService } from '../header.service';
 
 @Component({
@@ -17,7 +16,6 @@ export class HeaderReusableComponent implements OnInit {
   isBeta?: boolean;
 
   headerService = inject(HeaderService);
-  mediaQueryService = inject(MediaQueryService);
 
   ngOnInit(): void {}
 }
